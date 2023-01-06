@@ -1,4 +1,4 @@
-# Software_engeneering
+# Software_engineering
 
 Проект по дисциплине "Программная инженерия".
 
