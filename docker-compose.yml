@@ -1,0 +1,11 @@
+services:
+  gradio:
+    image: ashmastaflash/gradio37_debjessie
+    restart: always
+    ports:
+      - 8081:80
+
+  python: 
+    build: .
+    ports:
+      - 8080:80
