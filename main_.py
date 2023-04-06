@@ -41,4 +41,4 @@ if __name__ == '__main__':
 
         get_text.click(predict_text, inputs=text_input, outputs=text_output)
         image_button.click(generate_image, inputs=text_output, outputs=image_output)
-    demo.launch(server_name='0.0.0.0')
+    demo.launch(server_name='0.0.0.0', share = True)
