@@ -10,4 +10,3 @@ COPY . .
 
 ENTRYPOINT ["python", "main_.py"]
 
-# CMD ['gradio','main_.py']
