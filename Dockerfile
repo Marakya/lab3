@@ -1,6 +1,6 @@
 FROM python:3
 
-# WORKDIR /projectMLops
+WORKDIR /var/lib/docker/tmp/buildkit-mount3857901467/Dockerfile
 
 # COPY . /projectMLops
 
