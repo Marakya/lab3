@@ -1,11 +1,13 @@
 FROM python:3
 
 WORKDIR /projectMLops
+
 COPY . /projectMLops
+
 RUN pip3 install -r requirements.txt
 
 COPY . .
 
-EXPOSE 80
+ENTRYPOINT ['python', 'main_.py']
 
-CMD ['gradio','main_.py']
+# CMD ['gradio','main_.py']
