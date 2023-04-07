@@ -43,7 +43,7 @@ pipeline {
         stage('Build docker image') {
             steps{
 //                 sh 'docker build -t my_img -f /var/lib/jenkins/workspace/lab3/Dockerfile .'
-                sh 'docker build -t my_img -f .\Dockerfile .'
+                sh 'docker build -t my_img -f ./Dockerfile .'
                 sh 'docker run -it -d --name my_cont -p 7000:7000  my_img:latest'
                 sh 'docker logs -f my_cont'
             }
