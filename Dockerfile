@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 80
 
-CMD gradio run main_.py
+CMD ['gradio','main_.py']
