@@ -8,6 +8,6 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ['python', 'main_.py']
+ENTRYPOINT ["python", "main_.py"]
 
 # CMD ['gradio','main_.py']
