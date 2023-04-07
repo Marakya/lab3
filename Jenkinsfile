@@ -30,10 +30,5 @@ pipeline {
                 }
             }
         }
-        stage('Delete docker image locally') {
-            steps{
-                sh 'docker rmi bakavets/jenkins-images:0.4'
-            }
-        }
     }
 }
