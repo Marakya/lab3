@@ -22,8 +22,8 @@ pipeline {
         }
         stage('Build docker image') {
             steps{
-                    sh 'docker build -t my_img -f Dockerfile .'
-                    sh 'docker run -it -d --name my_cont -p 7000:7000  my_img:latest'
+                    sh 'docker build -t marakya/my_img -f Dockerfile .'
+                    sh 'docker run -it -d --name my_cont -p 7000:7000  marakya/my_img:latest'
 //                     sh 'docker logs -f my_cont'
                     
                 
@@ -33,7 +33,7 @@ pipeline {
             steps{
                 withDockerRegistry(credentialsId: 'dockerhub_marakya', url: 'https://index.docker.io/v1/') {
                     sh '''
-                        docker push my_img
+                        docker push marakya/my_img
                     '''
                 }
             }
