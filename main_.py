@@ -13,14 +13,14 @@ def predict_text(text):
         return text_sum(
             'Pink elephant likes eating a lot of fruits and vegetable, but it likes eating bananas more then others')   
 
-  
+
 def generate_image(text):
     """ Если юзер не ввел текст, то создание изображения происходит по дефолтному тексту """
     if len(text) > 0:
         return picture_gen(text)
     else:
         return picture_gen('Pink elephant')
-    
+
 
 if __name__ == '__main__':
     with gr.Blocks() as demo:
@@ -41,7 +41,6 @@ if __name__ == '__main__':
                     image_output = gr.Image(label='Result', show_label=True, elem_id='image')
             with gr.Column(scale=2):
                 pass
-
 
         get_text.click(predict_text, inputs=text_input, outputs=text_output)
         image_button.click(generate_image, inputs=text_output, outputs=image_output)
