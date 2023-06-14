@@ -1,6 +1,7 @@
 ## Jenkins
 ![Снимок экрана от 2023-04-08 11-23-33](https://user-images.githubusercontent.com/113238801/230707148-51349698-7446-4e7d-b46f-e8435f68b661.png)
 
+![kak-realistichno-narisovat-polya-1200x675](https://github.com/Marakya/lab3/assets/113238801/9c483812-67d0-4613-9d79-714c12cac180)
 
 ## Вывод консоли
 ![Снимок экрана от 2023-04-08 11-17-14](https://user-images.githubusercontent.com/113238801/230707152-7e5cb3a9-241e-4eca-9ba9-ec33139461ca.png)
