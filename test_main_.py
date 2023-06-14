@@ -1,6 +1,7 @@
 import main_
-import pytest
 import imghdr
+import pytest
+import gradio
 
 
 # Ввод чисел, вместо текста приводит к ошибке ValueError
