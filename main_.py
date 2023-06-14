@@ -13,7 +13,7 @@ def predict_text(text):
         return text_sum(
             'Pink elephant likes eating a lot of fruits and vegetable, but it likes eating bananas more then others')   
 
-    
+  
 def generate_image(text):
     """ Если юзер не ввел текст, то создание изображения происходит по дефолтному тексту """
     if len(text) > 0:
@@ -21,8 +21,8 @@ def generate_image(text):
     else:
         return picture_gen('Pink elephant')
     
-    
-if __name__=='__main__':
+
+if __name__ == '__main__':
     with gr.Blocks() as demo:
         with gr.Row():
             with gr.Column(scale=2):
@@ -32,8 +32,8 @@ if __name__=='__main__':
                     gr.Markdown(
                         """### The meaning in one picture!""")
                 with gr.Row():
-                    text_input=gr.Text(label='Enter your text here:', elem_id='text_input')
-                    text_output=gr.Text(label='Text summary here', elem_id='text_output', interactive=False)
+                    text_input = gr.Text(label='Enter your text here:', elem_id='text_input')
+                    text_output = gr.Text(label='Text summary here', elem_id='text_output', interactive=False)
                 with gr.Row():
                     get_text = gr.Button("Get summary", elem_id='button2')
                     image_button = gr.Button("Generate picture", elem_id='button2')
@@ -42,7 +42,7 @@ if __name__=='__main__':
             with gr.Column(scale=2):
                 pass
 
-            
+
         get_text.click(predict_text, inputs=text_input, outputs=text_output)
         image_button.click(generate_image, inputs=text_output, outputs=image_output)
     demo.launch(server_name='0.0.0.0', server_port=7000, share=True)
