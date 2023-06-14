@@ -11,7 +11,7 @@ def predict_text(text):
         return text_sum(text)
     else:
         return text_sum(
-            'Pink elephant likes eating a lot of fruits and vegetable, but it likes eating bananas more then others')   
+            'Pink elephant likes eating a lot of fruits and vegetable, but it likes eating bananas more then others')
 
 
 def generate_image(text):
