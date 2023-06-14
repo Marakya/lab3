@@ -35,14 +35,14 @@ if __name__=='__main__':
                     text_input=gr.Text(label='Enter your text here:', elem_id='text_input')
                     text_output=gr.Text(label='Text summary here', elem_id='text_output', interactive=False)
                 with gr.Row():
-                    get_text = gr.Button("Get summary",elem_id='button2')
-                    image_button = gr.Button("Generate picture",elem_id='button2')
+                    get_text = gr.Button("Get summary", elem_id='button2')
+                    image_button = gr.Button("Generate picture", elem_id='button2')
                 with gr.Row():
-                    image_output = gr.Image(label='Result',show_label=True,elem_id='image')
+                    image_output = gr.Image(label='Result', show_label=True, elem_id='image')
             with gr.Column(scale=2):
                 pass
 
             
-        get_text.click(predict_text,inputs=text_input,outputs=text_output)
-        image_button.click(generate_image,inputs=text_output,outputs=image_output)
-    demo.launch(server_name='0.0.0.0',server_port=7000,share=True)
+        get_text.click(predict_text, inputs=text_input, outputs=text_output)
+        image_button.click(generate_image, inputs=text_output, outputs=image_output)
+    demo.launch(server_name='0.0.0.0', server_port=7000, share=True)
