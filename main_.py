@@ -38,7 +38,7 @@ if __name__=='__main__':
                     get_text=gr.Button("Get summary", elem_id='button2')
                     image_button=gr.Button("Generate picture", elem_id='button2')
                 with gr.Row():
-                    image_outpu =gr.Image(label='Result', show_label=True, elem_id='image')
+                    image_output=gr.Image(label='Result', show_label=True, elem_id='image')
             with gr.Column(scale=2):
                 pass
 
