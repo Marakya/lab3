@@ -5,7 +5,7 @@ import imghdr
 
 # Ввод чисел, вместо текста приводит к ошибке ValueError
 def test_error():
-    with pytest.raises(ValueError):
+    with pytest.raises(gradio.exceptions.Error):
         main_.text_sum(12323434)
 
 
