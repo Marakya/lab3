@@ -1,8 +1,8 @@
 import gradio as gr
 
 
-text_sum = gr.Blocks.load(name="huggingface/csebuetnlp/mT5_multilingual_XLSum")
-picture_gen = gr.Blocks.load(name="huggingface/CompVis/stable-diffusion-v1-4")
+text_sum = gr.load(name="huggingface/csebuetnlp/mT5_multilingual_XLSum")
+picture_gen = gr.load(name="huggingface/CompVis/stable-diffusion-v1-4")
 
 
 def predict_text(text):
